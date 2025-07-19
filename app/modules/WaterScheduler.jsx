@@ -16,6 +16,7 @@ import {
   View
 } from "react-native";
 import { useLanguage } from '../context/LanguageContext';
+import useFCM from '../modules/useFCM';
 
 // Firebase config and init
 const firebaseConfig = {
@@ -90,6 +91,7 @@ const ActionButton = ({ onPress, title, color }) => (
 
 export default function WaterScheduler() {
   const { selectedLanguage } = useLanguage();
+  const fcmToken = useFCM();
   // States for both features
   const [activeTab, setActiveTab] = useState("schedule");
   
@@ -214,9 +216,10 @@ export default function WaterScheduler() {
           ...c,
           acres: parseFloat(c.acres),
         })),
+        fcm_token: fcmToken, // <-- Add this line!
       };
 
-      const response = await fetch("http://192.168.99.246:5000/schedule", {
+      const response = await fetch("http://10.3.5.210:5000/schedule", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -296,7 +299,6 @@ export default function WaterScheduler() {
   const handleDeletePredictionCrop = (index) => {
     setPredictionCrops(prev => prev.filter((_, i) => i !== index));
   };
-
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}

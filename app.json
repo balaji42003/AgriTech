@@ -4,7 +4,7 @@
     "slug": "Smart_Agri",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./Agrilogo.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -17,7 +17,9 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.SmartAgri"
+      "package": "com.anonymous.SmartAgri",
+      "googleServicesFile": "./android/app/google-services.json",
+      "icon": "./assets/images/icon.png"
     },
     "web": {
       "bundler": "metro",

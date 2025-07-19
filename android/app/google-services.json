@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "429221449128",
+    "project_id": "notifications-e7dee",
+    "storage_bucket": "notifications-e7dee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429221449128:android:f7a85e15d32c621ee7e19d",
+        "android_client_info": {
+          "package_name": "agritech.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_iM9FM2NcRGx33WBIu45OGyV3SkBhUe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429221449128:android:f093118e809f6f5ae7e19d",
+        "android_client_info": {
+          "package_name": "com.anonymous.SmartAgri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_iM9FM2NcRGx33WBIu45OGyV3SkBhUe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
